@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>What would you keep by not replacing your roof? — BisMan Roof Guys</title>
+<meta name="description" content="Type your address. We pull the measured size of your roof from public county records, then show what a tear-off would cost versus treating it, and what you would keep. Bismarck, Mandan and Lincoln. Free, no obligation.">
+<link rel="canonical" href="https://bismanroofguys.com/savings/">
+<meta property="og:title" content="What would you keep by not replacing your roof?">
+<meta property="og:description" content="Real measured roof size from county records, not a satellite guess. See the number in about 20 seconds.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://bismanroofguys.com/savings/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Roboto+Slab:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--void:#050D1F;--hud:#27BEFF;--hud2:#7FE0FF;--amber:#E8A33D;--dim:#6E88AE;
+ --paper:#FAF7F2;--ink:#071D44;--mut:#6B7A93;--faint:#9AA7BB;--rule:#DFD8CC;--rule2:#EDE7DC;
+ --panel:#F2EEE6;--rust:#B4531E;--brand:#FF5C8D;--ok:#1E7A4B;
+ --mono:'JetBrains Mono',ui-monospace,Menlo,monospace;--sans:Roboto,system-ui,sans-serif;
+ --slab:'Roboto Slab',Georgia,serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--rust)}
+:focus-visible{outline:2px solid var(--brand);outline-offset:3px}
+.w{max-width:760px;margin:0 auto;padding:0 20px}
+.nav{border-bottom:1px solid rgba(255,255,255,.12);background:var(--void)}
+.nav .w{display:flex;align-items:center;justify-content:space-between;height:58px}
+.mark{font:700 16px/1 var(--slab);color:#fff;text-decoration:none}
+.mark i{font-style:normal;color:var(--brand)}
+.navtel{font:500 12px/1 var(--mono);letter-spacing:.06em;color:var(--hud2);text-decoration:none}
+.hero{background:var(--void);color:#DCE9FA;padding:52px 0 56px;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;opacity:.5;pointer-events:none;
+ background:linear-gradient(rgba(127,224,255,.07) 1px,transparent 1px) 0 0/100% 44px,
+ linear-gradient(90deg,rgba(127,224,255,.07) 1px,transparent 1px) 0 0/44px 100%;
+ mask-image:radial-gradient(ellipse at 50% 30%,#000,transparent 78%)}
+.hero .w{position:relative}
+.kicker{font:700 10px/1 var(--mono);letter-spacing:.22em;text-transform:uppercase;color:var(--hud2);margin:0 0 16px}
+h1{font:700 clamp(28px,5.4vw,44px)/1.1 var(--slab);margin:0 0 16px;color:#fff;letter-spacing:-.015em}
+h1 i{font-style:normal;color:var(--brand)}
+.lede{font-size:17px;line-height:1.62;color:#B9CCE4;margin:0 0 26px;max-width:60ch}
+.form{display:flex;gap:8px;flex-wrap:wrap}
+input,select{min-height:52px;background:rgba(127,224,255,.06);border:1px solid rgba(127,224,255,.22);
+ color:#DCE9FA;font:400 16px/1 var(--sans);padding:0 14px;border-radius:3px}
+input::placeholder{color:#5E7A9E}
+#addr{flex:1 1 260px}
+#city{flex:0 1 170px}
+#zip{flex:0 1 108px}
+select option{background:#0A1730;color:#DCE9FA}
+input:focus,select:focus{border-color:var(--hud);outline:none}
+.btn{min-height:52px;padding:0 24px;border:0;border-radius:3px;cursor:pointer;
+ font:700 12px/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;background:var(--hud);color:#04101F}
+.btn:disabled{opacity:.45;cursor:not-allowed}
+.btn.big{width:100%;min-height:56px;background:var(--brand);color:#fff;font-size:13px}
+.hint{font:400 12.5px/1.6 var(--mono);color:var(--dim);margin:14px 0 0}
+main{padding:40px 0 10px}
+.status{font:500 14px/1.6 var(--mono);color:var(--mut);padding:18px 0}
+.card{background:#fff;border:1px solid var(--rule);border-radius:5px;padding:26px 24px;margin:0 0 20px;
+ box-shadow:0 1px 0 rgba(7,29,68,.04)}
+.card h2{font:600 11px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin:0 0 18px}
+.addr{font:600 18px/1.3 var(--slab);margin:0 0 4px}
+.meta{font:400 13px/1.6 var(--mono);color:var(--faint);margin:0 0 20px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{padding:11px 0;border-bottom:1px solid var(--rule2)}
+td:first-child{color:var(--mut)}
+td:last-child{text-align:right;font-variant-numeric:tabular-nums;font-weight:500}
+.keep{margin:24px 0 0;padding:24px;background:var(--void);border-radius:4px;text-align:center;color:#DCE9FA}
+.keep .lab{font:700 10px/1 var(--mono);letter-spacing:.2em;text-transform:uppercase;color:var(--hud2);margin:0 0 12px}
+.keep .num{font:700 clamp(30px,7vw,50px)/1 var(--slab);color:#fff;letter-spacing:-.02em}
+.keep .sub{font:400 13px/1.6 var(--sans);color:#8FA8C6;margin:12px 0 0}
+.note{font-size:14px;line-height:1.65;color:var(--mut);margin:18px 0 0;padding-left:14px;border-left:2px solid var(--amber)}
+.src{font:400 11.5px/1.6 var(--mono);color:var(--faint);margin:18px 0 0}
+.cap{background:var(--panel);border:1px solid var(--rule);border-radius:5px;padding:26px 24px}
+.cap h3{font:700 21px/1.3 var(--slab);margin:0 0 8px}
+.cap p{font-size:15px;line-height:1.62;color:var(--mut);margin:0 0 18px}
+.cap input{background:#fff;border:1px solid var(--rule);color:var(--ink);width:100%;margin:0 0 10px;flex:none}
+.cap input::placeholder{color:var(--faint)}
+.fine{font:400 12px/1.6 var(--sans);color:var(--faint);margin:14px 0 0}
+.honest{margin:26px 0 0;padding:22px 24px;border:1px dashed var(--rule);border-radius:5px}
+.honest h3{font:600 11px/1 var(--mono);letter-spacing:.18em;text-transform:uppercase;color:var(--mut);margin:0 0 12px}
+.honest p{font-size:14.5px;line-height:1.68;color:var(--ink);margin:0 0 10px}
+.honest p:last-child{margin:0}
+footer{margin:50px 0 0;padding:26px 0 40px;border-top:1px solid var(--rule);font:400 13px/1.7 var(--sans);color:var(--faint)}
+footer a{color:var(--mut);margin-right:14px}
+.hide{display:none}
+</style>
+</head>
+<body>
+<nav class="nav"><div class="w">
+<a class="mark" href="https://bismanroofguys.com/">BisMan <i>Roof Guys</i></a>
+<a class="navtel" href="tel:17019873886">(701) 987-3886</a>
+</div></nav>
+
+<header class="hero"><div class="w">
+<p class="kicker">Bismarck · Mandan · Lincoln</p>
+<h1>What would you <i>keep</i> by not replacing your roof?</h1>
+<p class="lede">Type your address. We pull the measured size of your roof straight out of the county
+records, then run it against what a tear-off costs here versus what it costs to treat the shingles you
+already have. Takes about twenty seconds. Nothing to buy, and we do not need your phone number to show you.</p>
+<div class="form">
+  <input id="addr" placeholder="Street number and name" autocomplete="street-address">
+  <select id="city">
+    <option value="">City</option>
+    <option value="BISMARCK">Bismarck</option>
+    <option value="MANDAN">Mandan</option>
+    <option value="LINCOLN">Lincoln</option>
+    <option value="OTHER">Elsewhere in Burleigh / Morton</option>
+  </select>
+  <input id="zip" placeholder="ZIP" maxlength="5" inputmode="numeric">
+  <button class="btn" id="go">Show me</button>
+</div>
+<p class="hint">Bismarck and Mandan share street names, so the city matters.</p>
+</div></header>
+
+<main class="w"><div id="out"></div></main>
+
+<footer class="w">
+<a href="https://bismanroofguys.com/">Home</a><a href="https://bismanroofguys.com/score">Free roof score</a><a href="https://bismanroofguys.com/pricing">Pricing</a><a href="https://bismanroofguys.com/hail-history">Hail history</a><a href="https://bismanroofguys.com/record/">Roof record</a>
+<p style="margin:14px 0 0">BisMan Roof Guys · Bismarck-Mandan · (701) 987-3886</p>
+</footer>
+
+<iframe name="leadsink" style="display:none" title="submit target"></iframe>
+
+<script src="./roof-measure.js"></script>
+<script>
+var $=function(i){return document.getElementById(i)};
+var TEAR_LO=5.50,TEAR_HI=6.30,TRT_LO=1.50,TRT_HI=2.30;
+var LAST=null;
+function money(n){return '$'+Math.round(n).toLocaleString('en-US')}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
+
+
+function capForm(addrLine, area, yearBuilt, parcelId, answers, heading, blurb){
+  return '<div class="cap"><h3>'+heading+'</h3><p>'+blurb+'</p>'+
+  '<form id="leadform" method="POST" action="https://bismanroofguys.com/" target="leadsink">'+
+  '<input type="hidden" name="form-name" value="roof-score-lead">'+
+  '<p class="hide"><label>Leave blank <input name="company"></label></p>'+
+  '<input type="hidden" name="address" value="'+esc(addrLine)+'">'+
+  '<input type="hidden" name="roof_area" value="'+esc(area||'')+'">'+
+  '<input type="hidden" name="year_built" value="'+esc(yearBuilt||'')+'">'+
+  '<input type="hidden" name="age_source" value="savings calculator">'+
+  '<input type="hidden" name="score_range" value="not yet inspected">'+
+  '<input type="hidden" name="answers" value="'+esc(answers)+'">'+
+  '<input name="first_name" placeholder="Your name" required>'+
+  '<input name="phone" type="tel" placeholder="Mobile number" required>'+
+  '<button class="btn big" type="submit">Text me my numbers</button>'+
+  '<p class="fine">One text with your figures. If you want a free look at the roof we will say so once and leave it alone after that.</p>'+
+  '</form></div>';
+}
+
+function render(r){
+  var out=$('out');
+  if(!r.ok){
+    var alt='';
+    if(r.otherCityMatches&&r.otherCityMatches.length){
+      alt='<p class="note">We found that address in '+esc(r.otherCityMatches[0].city)+
+          ' '+esc(r.otherCityMatches[0].zip)+'. We will never swap the city on you, so pick the right one above and try again.</p>';
+    }
+    out.innerHTML='<div class="card"><h2>No match</h2><p class="addr">'+esc(r.error||'Address not found')+
+      '</p><p class="meta">Try it without the apartment or unit number.</p>'+alt+'</div>';
+    return;
+  }
+  var fp=null,pitchRows=[];
+  for(var i=0;i<r.estimates.length;i++){
+    if(r.estimates[i].byPitch){fp=r.estimates[i];pitchRows=r.estimates[i].byPitch}
+  }
+  var area=null;
+  if(pitchRows.length){
+    for(var j=0;j<pitchRows.length;j++){if(pitchRows[j].pitch==='6/12')area=pitchRows[j].roofAreaFt2}
+    if(!area)area=pitchRows[0].roofAreaFt2;
+  } else {
+    for(var k=0;k<r.estimates.length;k++){if(r.estimates[k].roofAreaFt2)area=r.estimates[k].roofAreaFt2}
+  }
+  if(!area){
+    var aline=(r.property?(r.property.address+', '+r.property.city+((r.property.zip&&/^58/.test(String(r.property.zip)))?' '+r.property.zip:'')):'unknown');
+    out.innerHTML='<div class="card"><h2>Not in the published records</h2>'+
+      '<p class="addr">'+esc(aline)+'</p>'+
+      '<p class="meta">The county has a parcel here but no measured building outline, which is normal just outside the city footprint layer.</p>'+
+      '<p class="note">That does not mean we cannot tell you. It means somebody has to measure it, which we do for free and takes about twenty minutes.</p></div>'+
+      capForm(aline, '', (r.property&&r.property.yearBuilt)||'', (r.property&&r.property.parcelId)||'',
+        'No published footprint. Needs an on-site measurement. Parcel '+((r.property&&r.property.parcelId)||'unknown'),
+        'Want us to measure it for free?',
+        'No published outline at this address, so we will measure it on site and text you the numbers. Nothing to buy.');
+    out.scrollIntoView({behavior:'smooth',block:'start'});
+    return}
+
+  var repLo=area*TEAR_LO, repHi=area*TEAR_HI, trtLo=area*TRT_LO, trtHi=area*TRT_HI;
+  var keepLo=repLo-trtHi, keepHi=repHi-trtLo;
+  var shared=r.sharedRoof&&r.sharedRoof.isShared;
+  LAST={address:r.property.address,city:r.property.city,area:area,zip:((r.property.zip&&/^58/.test(String(r.property.zip)))?r.property.zip:''),
+        replace:money(repLo)+' to '+money(repHi),treat:money(trtLo)+' to '+money(trtHi),
+        savings:money(keepLo)+' to '+money(keepHi)};
+
+  var h='';
+  h+='<div class="card">';
+  h+='<h2>Public record</h2>';
+  var zshow=(r.property.zip&&/^58/.test(String(r.property.zip)))?(' '+esc(r.property.zip)):'';
+  h+='<p class="addr">'+esc(r.property.address)+', '+esc(r.property.city)+zshow+'</p>';
+  h+='<p class="meta">Parcel '+esc(r.property.parcelId)+(r.property.yearBuilt?' · house built '+r.property.yearBuilt:'')+'</p>';
+  h+='<table>';
+  if(fp&&fp.footprintFt2){h+='<tr><td>Measured building outline</td><td>'+fp.footprintFt2.toLocaleString()+' sq ft</td></tr>'}
+  h+='<tr><td>Roof surface'+(fp?' at a typical 6/12 pitch':', from assessor records')+'</td><td>'+area.toLocaleString()+' sq ft</td></tr>';
+  if(shared){h+='<tr><td>Your share of a shared roof</td><td>'+Math.round(r.sharedRoof.shareOfStructure*100)+'%</td></tr>'}
+  h+='<tr><td>Tear off and replace</td><td>'+money(repLo)+' to '+money(repHi)+'</td></tr>';
+  h+='<tr><td>Treat the shingles you have</td><td>'+money(trtLo)+' to '+money(trtHi)+'</td></tr>';
+  h+='</table>';
+  h+='<div class="keep"><p class="lab">What you would keep</p><div class="num">'+money(keepLo)+' to '+money(keepHi)+'</div>'+
+     '<p class="sub">plus the years you get back on a roof you already paid for</p></div>';
+  h+='<p class="note">This is a real measurement, not a satellite guess. What it is not is a quote. '+
+     'Which treatment your roof qualifies for is set by its Roof Health Score at the inspection, and that '+
+     'takes somebody physically on the roof. Some roofs score too low and the honest answer is replacement. '+
+     'We will tell you that if it is true.</p>';
+  h+='<p class="src">Source: '+esc(r.sources.parcel)+'; '+esc(r.sources.footprint)+'. '+
+     'Tear-off and treatment rates are the same published numbers on our pricing page.</p>';
+  h+='</div>';
+
+  h+='<div class="cap"><h3>Want this in writing?</h3>'+
+     '<p>Give us a number and we will text you a copy of these figures so you are not trying to remember them later. '+
+     'No call unless you ask for one.</p>'+
+     '<form id="leadform" method="POST" action="https://bismanroofguys.com/" target="leadsink">'+
+     '<input type="hidden" name="form-name" value="roof-score-lead">'+
+     '<p class="hide"><label>Leave blank <input name="company"></label></p>'+
+     '<input type="hidden" name="address" value="'+esc(LAST.address+', '+LAST.city+(LAST.zip?' '+LAST.zip:''))+'">'+
+     '<input type="hidden" name="roof_area" value="'+area+'">'+
+     '<input type="hidden" name="year_built" value="'+(r.property.yearBuilt||'')+'">'+
+     '<input type="hidden" name="age_source" value="savings calculator">'+
+     '<input type="hidden" name="score_range" value="not yet inspected">'+
+     '<input type="hidden" name="answers" value="'+esc('Replace '+LAST.replace+' | Treat '+LAST.treat+' | Keeps '+LAST.savings+' | footprint '+((fp&&fp.footprintFt2)||'n/a')+' sq ft | parcel '+r.property.parcelId)+'">'+
+     '<input name="first_name" placeholder="Your name" required>'+
+     '<input name="phone" type="tel" placeholder="Mobile number" required>'+
+     '<button class="btn big" type="submit">Text me my numbers</button>'+
+     '<p class="fine">One text with your figures. If you want a free look at the roof we will say so once and leave it alone after that.</p>'+
+     '</form></div>';
+
+  h+='<div class="honest"><h3>Before you get excited</h3>'+
+     '<p>This is not a miracle product. It buys years on shingles that still have life in them. It does not '+
+     'bring a roof back from the dead. We looked at one last week that was too far gone and told the owner to '+
+     'just replace it.</p>'+
+     '<p>The only way to know which one you have is for somebody to set a ladder and get up there. That part '+
+     'is free, it takes about twenty minutes, and you do not have to be home for it.</p></div>';
+
+  out.innerHTML=h;
+  out.scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+async function run(){
+  var a=$('addr').value.trim(), c=$('city').value, z=$('zip').value.trim();
+  if(!a){$('addr').focus();return}
+  if(!c){$('city').focus();return}
+  $('go').disabled=true; $('go').textContent='Looking…';
+  $('out').innerHTML='<p class="status">Pulling the county record for '+esc(a)+'…</p>';
+  try{ var r=await roofMeasure({address:a,city:c,zip:z}); render(r) }
+  catch(e){ $('out').innerHTML='<div class="card"><h2>Something broke</h2><p class="addr">'+esc(e.message||'Unknown error')+'</p><p class="meta">Give us a call at (701) 987-3886 and we will just look it up for you.</p></div>' }
+  $('go').disabled=false; $('go').textContent='Show me';
+}
+document.addEventListener('submit',function(e){
+  if(e.target && e.target.id==='leadform'){
+    setTimeout(function(){
+      var f=e.target;
+      f.innerHTML='<p style="font:600 17px/1.5 var(--slab);margin:0 0 6px">Got it. Sending your numbers now.</p>'+
+        '<p style="font-size:14.5px;line-height:1.6;color:var(--mut);margin:0">If you want the real number instead of the range, that takes a free twenty minute look at the roof. Just reply to the text.</p>';
+    },400);
+  }
+},true);
+$('go').addEventListener('click',run);
+['addr','zip'].forEach(function(id){$(id).addEventListener('keydown',function(e){if(e.key==='Enter')run()})});
+</script>
+</body>
+</html>
